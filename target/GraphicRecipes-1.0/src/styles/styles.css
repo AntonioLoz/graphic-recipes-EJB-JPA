@@ -1,0 +1,258 @@
+@font-face{
+    font-family: "letter-gothic-std";
+    src: url("fonts/LetterGothicStd.woff");
+}
+
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+form input[type="submit"]{
+    background-color: #CBBBA0;
+    color:#FFF;
+    border-radius: 93px 93px 93px 93px;
+    moz-border-radius: 93px 93px 93px 93px;
+    webkit-border-radius: 93px 93px 93px 93px;
+    border: 0px solid #000000;
+}
+
+.header{
+    position: static;
+    width: 100%;
+}
+
+.imgHeader{
+    position: absolute;
+    left: 1%;
+    top: 5%;
+}
+
+.headerRight{
+    position: absolute;
+    right: 1%;
+    top: 5%;
+}
+
+.bottonHeader{
+    display: inline-block;
+    float: right;
+    text-decoration: none;
+    background-color: #FFF;
+    color:#CBBBA0;
+    border-radius: 93px 93px 93px 93px;
+    moz-border-radius: 93px 93px 93px 93px;
+    webkit-border-radius: 93px 93px 93px 93px;
+    border: none;
+    text-align: center;
+    font-family: letter-gothic-std, sans-serif;
+    font-style: normal;
+    font-size: 90%;
+    margin: 3;
+    width: 20%;
+}
+
+.active, .bottonHeader:hover{
+    background: #CBBBA0;
+    color: #FFF;
+}
+
+.searchText{
+    float: right;
+    margin-right: 3%;
+    border-radius: 40px;
+    width: 67%;
+    margin-top: 10%;
+}
+
+.aside{
+    position: absolute;
+    left: 3%;
+    top: 30%;
+    width: 10%;
+}
+
+.bottonAside{
+    text-decoration: none;
+    color: #000000;
+    font-family: letter-gothic-std, sans-serif;
+    font-size: 100%;
+}
+
+.bottonAside:hover:before{
+    content: ">";
+    color: #CBBBA0;
+}
+
+.bottonAside:hover{
+    color: #CBBBA0;
+}
+
+.gridContainer{
+    position: absolute;
+    display: grid;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    left: 15%;
+    top: 34%;
+    grid-template-columns: repeat(3, 30%);
+    grid-auto-rows: 55%;
+    grid-gap: 10% 5%;
+    width: 70%;
+    height: 60%;
+}
+
+.gridContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.gridContainer:-webkit-scrollbar-thumb {
+    opacity: 1;
+}
+
+
+
+.gridItem{
+    position: relative;
+    background: #97989B;
+}
+
+.bottonGrid{
+    position: absolute;
+    text-decoration: none;
+    background-color: #CBBBA0;
+    color:#FFF;
+    border-radius: 93px 93px 93px 93px;
+    moz-border-radius: 93px 93px 93px 93px;
+    webkit-border-radius: 93px 93px 93px 93px;
+    border: none;
+    text-align: center;
+    font-family: letter-gothic-std, sans-serif;
+    font-style: normal;
+    font-size: 90%;
+    margin: 3;
+    width: 40%;
+    left: 55%;
+    top: 85%;
+}
+
+.title{
+    position: absolute;
+    left:3%;
+}
+
+.section{
+    position: relative;
+}
+
+.sectionHome{
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    top: 35%;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.sectionHome::-webkit-scrollbar {
+    display: none;
+}
+
+#section1{
+    width: 100%;
+    height: 100%;
+    background: #97989B;
+    display: inline-block;
+}
+
+#section2{
+    width: 100%;
+    height: 100%;
+    background: #97989B;
+    display: inline-block;
+}
+
+#section3{
+    width: 100%;
+    height: 100%;
+    background: #97989B;
+    display: inline-block;
+}
+
+#section4{
+    width: 100%;
+    height: 100%;
+    background: #97989B;
+    display: inline-block;
+}
+
+.buttonsNavigation{
+    position: absolute;
+    z-index: 990;
+    top: 90%;
+    left: 5%;
+}
+
+.buttonsSection {
+    background: #CBBBA0;
+    padding: 0.1% 90%;
+    border: 1px solid #CBBBA0;
+    border-radius: 50%;
+    text-decoration: none;
+    opacity: 0.5;
+    width:1px;
+    height:1px;
+    margin: 15%;
+}
+
+.buttonsSection:hover {
+  background: #CBBBA0;
+  opacity: 1;
+}
+
+/*Seccion receta*/
+
+.sectionRecipe{
+    position: absolute;
+    font-family: letter-gothic-std, sans-serif;
+    top:25%;
+    left: 12%;
+    width: 80%;
+    height: 75%;
+}
+
+.sectionRecipeLeft{
+    position: relative;
+    float:left;
+    width: 50%;
+    height: 100%;
+}
+
+.sectionRecipeRight{
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 85%;
+    margin-top: 5%;
+    overflow-y: scroll;
+}
+
+.sectionRecipeRight::-webkit-scrollbar {
+    display: none;
+}
+
+.nameRecipeRecipe{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 200%;
+}
+
+.imageRecipe{
+    position: relative;
+    background-color: #CBBBA0;
+    width: 90%;
+    height: 90%;
+}

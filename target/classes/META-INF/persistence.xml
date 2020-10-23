@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="GraphicRecipesMySqlDS" transaction-type="JTA">
+    <jta-data-source>java:jboss/datasources/graphicrecipes</jta-data-source>
+    <class>com.antonio.graphicrecipes.entity.Recipe</class>
+    <class>com.antonio.graphicrecipes.entity.User</class>
+    <properties>
+      <!--
+                  <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/graphicrecipes?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+                  <property name="javax.persistence.jdbc.user" value="root"/>
+                  <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+                  <property name="javax.persistence.jdbc.password" value=""/> 
+            -->
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+      <property name="javax.persistence.schema-generation.create-source" value="script"/>
+      <property name="javax.persistence.schema-generation.drop-source" value="script"/>
+      <property name="javax.persistence.schema-generation.create-script-source" value="META-INF/create.sql"/>
+      <property name="javax.persistence.schema-generation.drop-script-source" value="META-INF/delete.sql"/>
+      <property name="javax.persistence.sql-load-script-source" value="META-INF/insert.sql"/>
+    </properties>
+  </persistence-unit>
+</persistence>

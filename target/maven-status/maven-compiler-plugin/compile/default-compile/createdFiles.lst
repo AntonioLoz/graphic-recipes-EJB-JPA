@@ -1,0 +1,15 @@
+com\antonio\graphicrecipes\dao\IUserDAO.class
+com\antonio\graphicrecipes\controller\AboutUs.class
+com\antonio\graphicrecipes\dao\UserDAO.class
+com\antonio\graphicrecipes\controller\RecipesServlet.class
+com\antonio\graphicrecipes\entity\User.class
+com\antonio\graphicrecipes\auth\LoginFilter.class
+com\antonio\graphicrecipes\controller\HomeServlet.class
+com\antonio\graphicrecipes\controller\RegisterServlet.class
+com\antonio\graphicrecipes\dao\RecipeDAO.class
+com\antonio\graphicrecipes\dao\CategoryDAO.class
+com\antonio\graphicrecipes\dao\Dao.class
+com\antonio\graphicrecipes\dao\IRecipeDAO.class
+com\antonio\graphicrecipes\entity\Recipe.class
+com\antonio\graphicrecipes\controller\LoginServlet.class
+com\antonio\graphicrecipes\entity\Category.class

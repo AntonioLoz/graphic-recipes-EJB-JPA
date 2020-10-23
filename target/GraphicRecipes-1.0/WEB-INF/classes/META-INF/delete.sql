@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS Users;
+DROP TABLE IF EXISTS categories;
+DROP TABLE IF EXISTS recipes;
+DROP TABLE IF EXISTS users_recipes;
+DROP TABLE IF EXISTS users_roles;
